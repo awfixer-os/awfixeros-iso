@@ -2,10 +2,6 @@
 
 AWFixerOS ISO
 ===
-[![Built with Nix][builtwithnix badge]][builtwithnix]
-[![License: MIT][MIT badge]][MIT]
-[![Chat on Matrix][matrix badge]][matrix]
-[![Chat on Discord][discord badge]][discord]
 
 AWFixerOS is a NixOS based Linux distribution focused on beginner friendliness and ease of use. This repository contains the configuration used to build the AWFixerOS ISO files.
 
