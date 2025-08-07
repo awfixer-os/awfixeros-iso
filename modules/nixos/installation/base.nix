@@ -28,7 +28,7 @@
 
   i18n.supportedLocales = [ "all" ];
 
-  networking.hostName = "snowflakeos";
+  networking.hostName = "axylos";
   networking.wireless.enable = false;
 
   users.users = {
