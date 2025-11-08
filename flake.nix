@@ -1,20 +1,20 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    snowfall-lib = {
-      url = "github:awfixers-stuff/lib";
+    nixpkgs.url = "github:nixos/nixpkgs/awos-unstable";
+    awos-lib = {
+      url = "github:awfixer-os/lib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    axylos-modules = {
-      url = "github:awfixers-stuff/axylos-modules";
+    awos-modules = {
+      url = "github:awfixer-os/awos-modules";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     icicle = {
-      url = "github:awfixers-stuff/icicle";
+      url = "github:awfixer-os/icicle";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-data = {
-      url = "github:awfixers-stuff/nix-data";
+      url = "github:awfixer-os/nix-data";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-generators = {
@@ -31,13 +31,13 @@
       systems.modules.nixos = with inputs; [
         nix-data.nixosModules.nix-data
         icicle.nixosModules.icicle
-        axylos-modules.nixosModules.gnome
-        axylos-modules.nixosModules.kernel
-        axylos-modules.nixosModules.networking
-        axylos-modules.nixosModules.pipewire
-        axylos-modules.nixosModules.printing
-        axylos-modules.nixosModules.axylos
-        axylos-modules.nixosModules.metadata
+        awos-modules.nixosModules.awos-de
+        awos-modules.nixosModules.kernel
+        awos-modules.nixosModules.networking
+        awos-modules.nixosModules.pipewire
+        awos-modules.nixosModules.printing
+        awos-modules.nixosModules.awos
+        awos-modules.nixosModules.metadata
       ];
 
       src = ./.;
